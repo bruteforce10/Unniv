@@ -1,0 +1,71 @@
+body{background-color:#101010;font-family: 'Ubuntu', sans-serif;padding: 25px} a{text-decoration:none;}
+body::before{content:"\00A9  Script HTML Bucin";color:white;opacity:.3;font-size:2vw;position:fixed;bottom:25px;left:25px;}
+#bodyblur{display:block;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;}
+@keyframes jj{0%  {opacity:.67} 50% {opacity:.6} 100% {opacity:.67}}
+#bodyblur img{animation-name:jj;animation-duration: 3s;animation-iteration-count: infinite;}
+
+@keyframes leaves {0% {transform: scale(1.0);} 100% {transform: scale(.8);}}
+#lope, .lopdeg{animation: leaves 1s ease-in-out infinite alternate;-webkit-animation: leaves 1s ease-in-out infinite alternate;}
+.lovein:hover{transform: scale(1.3);} .kliklov{transition:all 1s ease;} .kliklov:hover{opacity:.5;}
+
+@keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
+blockquote, #idakhir, #idakhirdua{position:relative;opacity:.8;margin-left:0;margin-right:0;}
+blockquote, #idakhir, #idakhirdua{color:#fff;font-size:14px;font-weight:400;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);text-align:center;padding:20px 30px 20px 30px;border: 1px dashed #fff;border-radius:8px;transition:all .5s ease;}
+blockquote p:last-child, #idakhir{font-size:17px;font-weight:700;}
+#idakhir, #idakhirdua{opacity:0;border:0;animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;}
+
+#pergeseran{margin-top:50px;transition:all 1s ease;display:flex;flex-wrap:nowrap;align-items:flex-start;justify-content:flex-start;position:relative;max-width:500px;padding:0 20px; overflow-y:hidden;overflow-x:scroll;scroll-behavior:smooth;scroll-snap-type:x mandatory; -ms-overflow-style:none;-webkit-overflow-scrolling:touch}
+#pergeseran p{background:rgba(0, 0, 0, .5);color:white;border: 1px dashed #fff;border-radius:8px;padding:8px;display:flex;flex-wrap:nowrap;text-align:center;font-size:14px;font-weight:700;align-items:center;justify-content:center;flex-shrink:0; width:90%; min-height:100px;margin:0 15px 0 0; scroll-snap-align:center} #pergeseran > *:last-child{margin-right:0} #pergeseran:after{content:'';display:block;flex-shrink:0; align-self:stretch;padding-left:20px}
+#tm{color:#FFB400;transition:all .5s ease;} #tm:hover{transform: scale(.7);}
+
+.lovein{font-size:50px;display:flex;align-items:center;justify-content:center;transition:all .3s ease;}
+.lovein svg{width:80px;height:80px;fill:#fefefe}
+
+.content2{display:block;text-align:center;width:100%;height:180px;margin-top:50px;}
+.content2 > *{display:flex;align-items:center;justify-content:center;margin-top:15px;font-size:17px;color:white}
+.image img{opacity:0;transform:scale(.1);border-radius:10%;transition:all 1s ease;} #idmail{margin-top:12vh;background:#fff;padding:10px;width:180px;height:150px;} #idfoto{width:150px;height:150px;padding:8px;background:#fff;border-radius:10%;}
+
+.content2{display:none;}
+#Content{position:relative;opacity:0;margin-top:50px;width:100%;height:180px;transition:all 2s ease;}
+#Content > *{display:flex;align-items:center;justify-content:center;margin-top:15px;}
+#idgeser, #idkirim{font-size:17px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);color:white;transition:all .5s ease;}
+#idkirim{opacity:0;visibility:hidden;margin-top:100px} #idkirim:hover{transform:scale(.8);}
+
+.swal2-title{margin-right:20px;margin-left:20px;font-size:22px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-modal{background:rgba(255, 255, 255, .99);border: .7px solid #000;border-radius:22px;/*top:-60px;*/}
+
+:root {
+--warna-background: #327D2E; 
+--warna-bg-chat: #f0f5fb;
+--warna-icon: #fff; 
+--warna-text: #FFFFFF;
+--warna-text-alt: #E5E5E5;
+--lebar-chatbox: 320px;
+}
+
+svg{width: 22px;height: 22px;vertical-align: middle;fill: var(--warna-icon)}
+.chatMenu, .tombolChat .svg-2{display: none}
+
+.tombolChat{position: fixed;background-color: var(--warna-background);bottom: 20px;left: 20px;border-radius: 50px;z-index: 20;overflow: hidden;display:none;align-items: center;justify-content: center;width: 50px;height: 50px;-webkit-transition: all .2s ease-out;transition: all .2s ease-out}
+.tombolChat svg{margin: auto;fill: var(--warna-icon)}
+@keyframes kontb{0%  {left:20px; top:70px;} 50% {left:25px; top:72px;} 100% {left:20px; top:70px;}}
+.chatBox{animation-name:kontb;animation-duration: 3s;animation-iteration-count: infinite;position: fixed;top: 70px;left: 20px;width: var(--lebar-chatbox);-webkit-transition: all .1s ease-out;transition: all .1s ease-out;opacity: 0;visibility: hidden;line-height: normal}
+.chatContent{border-radius: 15px;background-color:transparent;max-height:50vh;overflow: auto}
+.chatHead{position: relative;display: flex;align-items: center;padding: 15px 20px;background-color: var(--warna-background);overflow: hidden}
+.chatHead svg{width: 32px;height: 32px;flex-shrink: 0;fill: var(--warna-icon)}
+.chatHead img{border-radius:50%;width: 50px;height: 50px;flex-shrink: 0;}
+.chatHead .chatTitle{padding-left: 15px;font-size: 14px;color: var(--warna-icon)}
+.chatHead .chatTitle span{font-size: 11.5px;display: block;line-height: 1.58em}
+
+.chatText{display: flex;flex-wrap: wrap;margin: 25px 20px;font-size: 15px;color: var(--warna-text)}
+.chatText span{display: none;opacity:0;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;margin-top:15px;margin-right: auto;padding: 10px 20px 10px 20px;background-color:rgba(0, 0, 0, .70);border-radius: 3px 15px 15px}
+/*.chatText span:after{content: 'now';margin-left: 15px;font-size: 9px;color: var(--warna-text-alt)}*/
+.chatText .typing{font-size: 14px;margin: 15px 0 0 auto;padding: 10px 20px 10px 10px;border-radius: 15px 3px 15px 15px}
+.chatText .typing:after{display: none}
+
+.balasChat{display:none;align-items: center;margin-top: 15px;padding: 18px 20px;border-radius: 10px;background-color:rgba(0, 0, 0, .70);overflow: hidden;font-size: 12px;color: white;-webkit-transition: all .1s ease-out;transition: all .1s ease-out;}.balasChat:hover{transform: scale(.90);}
+.chatMenu:checked + .tombolChat{-webkit-transform: rotate(360deg);transform: rotate(360deg)}
+.chatMenu:checked + .tombolChat .svg-1{display: none}
+.chatMenu:checked + .tombolChat .svg-2{display: block}
+.chatMenu:checked ~ .chatBox{top: 10vh;opacity: 1;visibility: visible}
+.chatMenu:checked ~ .bodyblur{opacity:0;visibility:hidden;}
