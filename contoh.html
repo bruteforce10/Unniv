@@ -1,234 +1,260 @@
 <html>
-<meta charset='UTF-8' />
-<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
-    name='viewport' />
-<meta content='IE=edge' http-equiv='X-UA-Compatible' />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-<link href="stylecontoh.css" rel="stylesheet" type="text/css" />
-<script src="https://manisku.likeadream.repl.co/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta
+    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+    name="viewport"
+  />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <link href="stylecontoh.css" rel="stylesheet" type="text/css" />
+  <script src="https://manisku.likeadream.repl.co/script.js"></script>
 
-<head>
+  <head>
     <!-- 
 This code was made by Rayya R
 Blog: https://sinkronin.com
 Instagram: rayyarrr
 TikTok: rayyarr_
 -->
-</head>
+  </head>
 
-<body>
-    <div id="bodyblur"><img src="https://i.postimg.cc/x1Qth9Zn/IMG-20211121-101604-345.png" width="100%"
-            height="100%" /></div>
-
-    <div id='Content'>
-        <div class="image"><img id="idmail" src="https://i.postimg.cc/xdkh6nd8/Nice-Png-envelope-png-113049.png"
-                onClick='showAkhir();this.onclick=null;' /></div>
-        <!-- Gambar Bergerak -->
-        <div class="image"><img id="idfoto" src="https://i.postimg.cc/QdQnTXwZ/hya.gif" /></div>
-        <!--<div id="sp1"></div>-->
-        <p id="idgeser">Sentuh Suratnya!</p>
-
-        <div id="idakhir"></div>
-        <div id="idakhirdua"></div>
-        <p id="idkirim" onClick="menuju();">[ Kirim Pesan ]</p>
+  <body>
+    <div id="bodyblur">
+      <img
+        src="https://i.postimg.cc/x1Qth9Zn/IMG-20211121-101604-345.png"
+        width="100%"
+        height="100%"
+      />
     </div>
 
-    <input class='chatMenu hidden' id='offchatMenu' type='checkbox' />
-    <div class='chatBox'>
-        <div id='data' class='chatContent'>
-            <div class='chatText'>
-                <!-- Pesan -->
-                <span id='text1'>Hai manisnya Akuu <3</span> <span id='text2'>Aku mau bilang nih</span>
-                <span id='text3'>Kamu jangan ngambek dong :(</span>
-                <span id='text4'>Jangan marah-marah terus:'</span>
-                <span id='text5'>Kurangin marahnya yaa ><</span> <span id='text6'>Banyakin senyumnya &#129395;</span>
-                <span id='text7'>Biar makin manis hehe &#128518;</span>
-                <span id='text8'>Ohh iyaaaa</span>
-                <span id='text9'>Coba pencet LOVE ini &#128073; <label class='kliklov'
-                        onclick="selesai();ketik();">&#9829;</label></span>
-            </div>
+    <div id="Content">
+      <div class="image">
+        <img
+          id="idmail"
+          src="https://i.postimg.cc/xdkh6nd8/Nice-Png-envelope-png-113049.png"
+          onClick="showAkhir();this.onclick=null;"
+        />
+      </div>
+      <!-- Gambar Bergerak -->
+      <div class="image">
+        <img id="idfoto" src="https://i.postimg.cc/QdQnTXwZ/hya.gif" />
+      </div>
+      <!--<div id="sp1"></div>-->
+      <p id="idgeser">Sentuh Suratnya!</p>
+
+      <div id="idakhir"></div>
+      <div id="idakhirdua"></div>
+      <p id="idkirim" onClick="menuju();">[ Kirim Pesan ]</p>
+    </div>
+
+    <input class="chatMenu hidden" id="offchatMenu" type="checkbox" />
+    <div class="chatBox">
+      <div id="data" class="chatContent">
+        <div class="chatText">
+          <!-- Pesan -->
+          <span id="text1">Hai manisnya Akuu <3</span>
+          <span id="text2">Aku mau bilang nih</span>
+          <span id="text3">Kamu jangan ngambek dong :(</span>
+          <span id="text4">Jangan marah-marah terus:'</span>
+          <span id="text5">Kurangin marahnya yaa ><</span>
+          <span id="text6">Banyakin senyumnya &#129395;</span>
+          <span id="text7">Biar makin manis hehe &#128518;</span>
+          <span id="text8">Ohh iyaaaa</span>
+          <span id="text9"
+            >Coba pencet LOVE ini &#128073;
+            <label class="kliklov" onclick="selesai();ketik();"
+              >&#9829;</label
+            ></span
+          >
         </div>
+      </div>
     </div>
-
 
     <script>
-        function showDiv() {
-            document.getElementById('idmail').style = "opacity:1;transform:scale(1);";
-            document.getElementById('Content').style.opacity = "1";
-            document.getElementById('Content').style.margin = "0";
-            document.getElementById('idfoto').style.height = "0px";
-        }
+      function showDiv() {
+        document.getElementById("idmail").style =
+          "opacity:1;transform:scale(1);";
+        document.getElementById("Content").style.opacity = "1";
+        document.getElementById("Content").style.margin = "0";
+        document.getElementById("idfoto").style.height = "0px";
+      }
 
-        function nonDiv() {
-            document.getElementById('Content').style.display = "none";
-        }
+      function nonDiv() {
+        document.getElementById("Content").style.display = "none";
+      }
 
-        function showAkhir() {
-            document.getElementById('idmail').style = "transform:scale(.01);opacity:0;";
-            document.getElementById('idgeser').style.display = "none";
-            setTimeout(memulai, 1000);
-        }
+      function showAkhir() {
+        document.getElementById("idmail").style =
+          "transform:scale(.01);opacity:0;";
+        document.getElementById("idgeser").style.display = "none";
+        setTimeout(memulai, 1000);
+      }
 
-        function memulai() {
-            teks1();
-            document.getElementById('idmail').style.display = "none";
-            document.getElementById('idakhir').style = "opacity:1;";
-            document.getElementById('idakhir').style.animation = "kont 3s infinite";
-            document.getElementById('idfoto').style.height = "150px";
-        }
+      function memulai() {
+        teks1();
+        document.getElementById("idmail").style.display = "none";
+        document.getElementById("idakhir").style = "opacity:1;";
+        document.getElementById("idakhir").style.animation = "kont 3s infinite";
+        document.getElementById("idfoto").style.height = "150px";
+      }
 
-        function showTom() {
-            document.getElementById('idkirim').style = "opacity:1;visibility:visible;margin-top:90px;";
-        }
+      function showTom() {
+        document.getElementById("idkirim").style =
+          "opacity:1;visibility:visible;margin-top:90px;";
+      }
 
-        function scroll() {
-            var objDiv = document.getElementById("data");
-            objDiv.scrollTop = objDiv.scrollHeight;
-        }
+      function scroll() {
+        var objDiv = document.getElementById("data");
+        objDiv.scrollTop = objDiv.scrollHeight;
+      }
 
-        function selesai() {
-            document.getElementById("offchatMenu").checked = false;
-        }
+      function selesai() {
+        document.getElementById("offchatMenu").checked = false;
+      }
 
-        function teks1() {
-            document.getElementById("offchatMenu").checked = true;
-            document.getElementById('text1').style.display = "inline-block";
-            document.getElementById('text1').style.opacity = "1";
-            setTimeout(teks2, 2200);
-        }
+      function teks1() {
+        document.getElementById("offchatMenu").checked = true;
+        document.getElementById("text1").style.display = "inline-block";
+        document.getElementById("text1").style.opacity = "1";
+        setTimeout(teks2, 2200);
+      }
 
-        function teks2() {
-            document.getElementById('text2').style.display = "inline-block";
-            document.getElementById('text2').style.opacity = "1";
-            setTimeout(teks3, 2200);
-            scroll()
-        }
+      function teks2() {
+        document.getElementById("text2").style.display = "inline-block";
+        document.getElementById("text2").style.opacity = "1";
+        setTimeout(teks3, 2200);
+        scroll();
+      }
 
-        function teks3() {
-            document.getElementById('text3').style.display = "inline-block";
-            document.getElementById('text3').style.opacity = "1";
-            setTimeout(teks4, 2200);
-            scroll()
-        }
+      function teks3() {
+        document.getElementById("text3").style.display = "inline-block";
+        document.getElementById("text3").style.opacity = "1";
+        setTimeout(teks4, 2200);
+        scroll();
+      }
 
-        function teks4() {
-            document.getElementById('text4').style.display = "inline-block";
-            document.getElementById('text4').style.opacity = "1";
-            setTimeout(teks5, 2200);
-            scroll()
-        }
+      function teks4() {
+        document.getElementById("text4").style.display = "inline-block";
+        document.getElementById("text4").style.opacity = "1";
+        setTimeout(teks5, 2200);
+        scroll();
+      }
 
-        function teks5() {
-            document.getElementById('text5').style.display = "inline-block";
-            document.getElementById('text5').style.opacity = "1";
-            setTimeout(teks6, 2200);
-            scroll()
-        }
+      function teks5() {
+        document.getElementById("text5").style.display = "inline-block";
+        document.getElementById("text5").style.opacity = "1";
+        setTimeout(teks6, 2200);
+        scroll();
+      }
 
-        function teks6() {
-            document.getElementById('text6').style.display = "inline-block";
-            document.getElementById('text6').style.opacity = "1";
-            setTimeout(teks7, 2200);
-            scroll()
-        }
+      function teks6() {
+        document.getElementById("text6").style.display = "inline-block";
+        document.getElementById("text6").style.opacity = "1";
+        setTimeout(teks7, 2200);
+        scroll();
+      }
 
-        function teks7() {
-            document.getElementById('text7').style.display = "inline-block";
-            document.getElementById('text7').style.opacity = "1";
-            setTimeout(teks8, 2200);
-            scroll()
-        }
+      function teks7() {
+        document.getElementById("text7").style.display = "inline-block";
+        document.getElementById("text7").style.opacity = "1";
+        setTimeout(teks8, 2200);
+        scroll();
+      }
 
-        function teks8() {
-            document.getElementById('text8').style.display = "inline-block";
-            document.getElementById('text8').style.opacity = "1";
-            setTimeout(teks9, 2200);
-            scroll()
-        }
+      function teks8() {
+        document.getElementById("text8").style.display = "inline-block";
+        document.getElementById("text8").style.opacity = "1";
+        setTimeout(teks9, 2200);
+        scroll();
+      }
 
-        function teks9() {
-            document.getElementById('text9').style.display = "inline-block";
-            document.getElementById('text9').style.opacity = "1";
-            scroll()
-        }
+      function teks9() {
+        document.getElementById("text9").style.display = "inline-block";
+        document.getElementById("text9").style.opacity = "1";
+        scroll();
+      }
 
-        var i = 0,
-            katakhir;
-        katakhir = "";
+      var i = 0,
+        katakhir;
+      katakhir = "";
 
-        function ketik() {
-            if (i < katakhir.length) {
-                document.getElementById("idakhir").innerHTML += katakhir.charAt(i);
-                i++;
-                setTimeout(ketik, 100);
-            }
-            if (i == katakhir.length) {
-                ketikk();
-                document.getElementById("idakhir").innerHTML = katakhir + emotsenyum;
-                document.getElementById('idfoto').style = "opacity:1;transform:scale(1);";
-                document.getElementById('idakhirdua').style = "opacity:1;animation:kont 3s infinite;";
-            }
+      function ketik() {
+        if (i < katakhir.length) {
+          document.getElementById("idakhir").innerHTML += katakhir.charAt(i);
+          i++;
+          setTimeout(ketik, 100);
         }
-        var u = 0,
-            katakhirdua;
-        katakhirdua = "";
+        if (i == katakhir.length) {
+          ketikk();
+          document.getElementById("idakhir").innerHTML = katakhir + emotsenyum;
+          document.getElementById("idfoto").style =
+            "opacity:1;transform:scale(1);";
+          document.getElementById("idakhirdua").style =
+            "opacity:1;animation:kont 3s infinite;";
+        }
+      }
+      var u = 0,
+        katakhirdua;
+      katakhirdua = "";
 
-        function ketikk() {
-            if (u < katakhirdua.length) {
-                document.getElementById("idakhirdua").innerHTML += katakhirdua.charAt(u);
-                u++;
-                setTimeout(ketikk, 200);
-            }
-            if (u == katakhirdua.length) {
-                setTimeout(showTom, 1000);
-            }
+      function ketikk() {
+        if (u < katakhirdua.length) {
+          document.getElementById("idakhirdua").innerHTML +=
+            katakhirdua.charAt(u);
+          u++;
+          setTimeout(ketikk, 200);
         }
+        if (u == katakhirdua.length) {
+          setTimeout(showTom, 1000);
+        }
+      }
     </script>
 
     <!-- Kata Akhir dan Audio -->
     <script type="text/javascript">
-        function play() {
-            var audio = new
-            Audio('https://manisku.likeadream.repl.co/faudio.mp3');
-            audio.play();
-        }
+      function play() {
+        var audio = new Audio("https://manisku.likeadream.repl.co/faudio.mp3");
+        audio.play();
+      }
 
-        const swals = Swal.mixin({
-            backdrop: 'rgba(0,0,123,0.4)',
-            allowOutsideClick: false,
-            cancelButtonColor: '#FF0040',
+      const swals = Swal.mixin({
+        backdrop: "rgba(0,0,123,0.4)",
+        allowOutsideClick: false,
+        cancelButtonColor: "#FF0040",
+      });
+      const swalsy = Swal.mixin({
+        confirmButtonText: "Iya",
+        allowOutsideClick: false,
+      });
+      const swalst = Swal.mixin({
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+      });
+
+      async function mulaipop() {
+        await swalst.fire({
+          title: "Tunggu yaa~",
         });
-        const swalsy = Swal.mixin({
-            confirmButtonText: 'Iya',
-            allowOutsideClick: false,
-        });
-        const swalst = Swal.mixin({
-            allowOutsideClick: false,
-            showConfirmButton: false,
-            timer: 1500,
-            timerProgressBar: true,
-        });
+        emotsenyum = "&#9829; &#9829; &#9829;";
+        katakhir = "I Love You ";
+        katakhirdua = "Makasih udah bertahan sejauh ini <3 ";
 
-        async function mulaipop() {
-            await swalst.fire({
-                title: 'Tunggu yaa~',
-            });
-            emotsenyum = "&#9829; &#9829; &#9829;";
-            katakhir = "I Love You ";
-            katakhirdua = "Makasih udah bertahan sejauh ini <3 ";
+        showDiv();
+      }
+      mulaipop();
 
-            showDiv();
-
-        }
-        mulaipop();
-
-        async function menuju() {
-            window.location = "https://api.whatsapp.com/send?phone=&text=Aku engga ngambek ko ><";
-        }
+      async function menuju() {
+        window.location =
+          "https://api.whatsapp.com/send?phone=&text=Aku engga ngambek ko ><";
+      }
     </script>
-</body>
-
+  </body>
 </html>
