@@ -11,63 +11,65 @@ let text9 = document.querySelector("#text9");
 function munculText1() {
   text1.style.display = "block";
   text1.classList.add("animation");
-  setTimeout(munculText2, 20);
+  setTimeout(munculText2, 2000);
 }
 
 function munculText2() {
   text1.style.display = "none";
   text2.classList.add("animation");
   text2.style.display = "block";
-  setTimeout(munculText3, 45);
+  setTimeout(munculText3, 4500);
 }
 
 function munculText3() {
   text2.style.display = "none";
   text3.classList.add("animation");
   text3.style.display = "block";
-  setTimeout(munculText4, 50);
+  setTimeout(munculText4, 5000);
 }
 function munculText4() {
   text3.style.display = "none";
   text4.classList.add("animation");
   text4.style.display = "block";
-  setTimeout(munculText5, 35);
+  setTimeout(munculText5, 3500);
 }
 function munculText5() {
   text4.style.display = "none";
   text5.classList.add("animation");
   text5.style.display = "block";
-  setTimeout(munculText6, 20);
+  setTimeout(munculText6, 2000);
 }
 function munculText6() {
   text5.style.display = "none";
   text6.classList.add("animation");
   text6.style.display = "block";
-  setTimeout(munculText7, 35);
+  setTimeout(munculText7, 3500);
 }
 function munculText7() {
   text6.style.display = "none";
   text7.classList.add("animation");
   text7.style.display = "block";
-  setTimeout(munculText8, 33);
+  setTimeout(munculText8, 3300);
 }
 function munculText8() {
   text7.style.display = "none";
   text8.classList.add("animation");
   text8.style.display = "block";
-  setTimeout(munculText9, 45);
+  setTimeout(munculText9, 4500);
 }
 function munculText9() {
   text8.style.display = "none";
   text9.classList.add("animation");
   text9.style.display = "block";
-  setTimeout(munculText10, 35);
+  setTimeout(munculText10, 3500);
 }
 function munculText10() {
   text9.style.display = "none";
   text10.classList.add("animation");
   text10.style.display = "block";
 }
+
+setTimeout(munculText1, 2000);
 
 const tombolMulai = document.querySelector("#tombolMulai");
 const pertanyaanPertama = document.querySelector("#pertanyaanPertama");
@@ -92,46 +94,99 @@ let muncul = function () {
 };
 
 let hadir = function () {
-  pertanyaanPertama.setAttribute("data-bs-target", "#exampleModal");
-  pertanyaanPertama.setAttribute("data-bs-toggle", "modal");
-  setTimeout(jawab, 3000);
+  jawabKetiga.setAttribute("data-bs-target", "#exampleModalToggle");
+  jawabKetiga.setAttribute("data-bs-toggle", "modal");
+  setTimeout(jawab, 300);
 };
 
 let jawab = function () {
-  pertanyaanPertama.click();
+  jawabKetiga.click();
 };
 
-setTimeout(munculText1, 2000);
 
-// const button = document.querySelector("#jwbPertama");
-// const buttonMau = document.querySelector("#mauBanget");
-// const container = document.querySelector(".container");
+const buttonPertanyaanKedua = document.querySelector('#tombolPertanyaanKedua');
+const pertanyaanKedua = document.querySelector('#pertanyaanKedua');
 
-// console.dir(buttonMau);
+buttonPertanyaanKedua.onclick = function() {
+  pertanyaanPertama.style.display="none";
+  pertanyaanKedua.style.display = "block";
+}
 
-// function jawab() {
-//   alert("I LOVE YOU");
-// }
+const inputJujur = document.querySelector("#inputJujur");
 
-// button.addEventListener("mouseover", function () {
-//   let x = Math.floor(Math.random() * 300) + 1;
-//   let y = Math.floor(Math.random() * 100) + buttonMau.offsetTop;
+inputJujur.addEventListener("change", function () {
+  this.value = "RAJIN BAIK & TIDAK SOMBONG";
+  setTimeout(hadir2, 2000);
+});
 
-//   this.style.left = x + "px";
-//   this.style.top = y + "px";
-// });
+let hadir2 = function() {
+  pertanyaanKedua.setAttribute("data-bs-target", "#exampleModalToggle2");
+  pertanyaanKedua.setAttribute("data-bs-toggle", "modal");
+    setTimeout(jawab2, 300);
+}
+
+
+let jawab2 = function () {
+  pertanyaanKedua.click();
+};
+
+
+const buttonPertanyaanKetiga = document.querySelector('#tombolPertanyaanKetiga');
+const pertanyaanKetiga = document.querySelector('#pertanyaanKetiga');
+const buttonPertanyaanKeempat = document.querySelector('#tombolPertanyaanKeempat');
+
+const pertanyaanKeempat = document.querySelector('#pertanyaanKeempat');
+
+buttonPertanyaanKeempat.onclick = function() {
+  pertanyaanKetiga.style.display = "none";
+  pertanyaanKeempat.style.display = "block";
+
+}
+
+
+
+
+buttonPertanyaanKetiga.onclick = function() {
+  pertanyaanKedua.style.display = "none";
+  pertanyaanKetiga.style.display="block";
+}
+
+
+
+
+
+const button = document.querySelector("#jwbPertama");
+const buttonMau = document.querySelector("#mauBanget");
+
+button.addEventListener("mouseover", function () {
+  let x = Math.floor(Math.random() * 300) + 1;
+  let y = Math.floor(Math.random() * 100) + buttonMau.offsetTop;
+
+  this.style.position = "absolute";
+  this.style.left = x + "px";
+  this.style.top = y + "px";
+});
+
+const berubah = document.querySelector("#berubah");
+const range = document.querySelector("#range");
+
+range.addEventListener("change", function () {
+  berubah.innerHTML = "Seberapa Sayang Sama Aku &#9829";
+  setTimeout(hadiahKamu, 1000);
+});
+
+const hadiahTerakhir = document.querySelector('#hadiahTerakhir');
+
+let hadiahKamu = function() {
+    pertanyaanKeempat.style.display="none";
+    hadiahTerakhir.style.display="block";
+}
+
+
+
+
 
 // // https://www.youtube.com/watch?v=GJrR58QGenw
 
-// const inputJujur = document.querySelector("#inputJujur");
 
-// inputJujur.addEventListener("change", function () {
-//   this.value = "TIDAK DONG";
-// });
 
-// const berubah = document.querySelector("#berubah span");
-// const range = document.querySelector("#range");
-
-// range.addEventListener("change", function () {
-//   berubah.innerHTML = "<b>SAYANG</b>";
-// });

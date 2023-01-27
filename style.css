@@ -1,12 +1,16 @@
 body {
   background-image: url(img/bg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position:-500px 0px;
+  background-repeat: none;
   height: 100vh;
 }
 
-.row {
+.isi-pesan {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .isi-pesan img {
@@ -15,9 +19,28 @@ body {
   display: block;
 }
 
+#pertanyaanPertama, #pertanyaanKedua, #pertanyaanKetiga, #pertanyaanKeempat, #hadiahTerakhir,#isi-pesan {
+  background-color: rgba(1, 1, 1, .8);
+  width: 100vw;
+  padding: 2em 1em;
+}
+
 .isi-pesan span {
   font-size: 1.5rem;
   color: white;
+}
+
+#pertanyaanKeempat label {
+    font-size: 1.5rem;
+  color: white;
+}
+
+#pertanyaanKeempat {
+  display: none;
+}
+
+#hadiahTerakhir {
+  display: none;
 }
 
 #text1,
@@ -31,6 +54,7 @@ body {
 #text9,
 #text10 {
   display: none;
+  margin: auto;
 }
 
 .animation {
@@ -62,6 +86,14 @@ body {
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
 }
+
+
+#pertanyaanKedua,
+#pertanyaanKetiga {
+  display: none;
+}
+
+
 
 /* Button */
 button {
@@ -141,7 +173,7 @@ button.learn-more:active::before {
 }
 /* Akhir Button */
 
-/* .group {
+.group {
   display: flex;
   line-height: 28px;
   align-items: center;
@@ -181,4 +213,4 @@ input:hover {
   fill: rgba(234, 76, 137, 0.4);
   width: 1rem;
   height: 1rem;
-} */
+}
