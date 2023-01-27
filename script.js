@@ -11,7 +11,7 @@ let text9 = document.querySelector("#text9");
 function munculText1() {
   text1.style.display = "block";
   text1.classList.add("animation");
-  setTimeout(munculText2, 2000);
+  setTimeout(munculText2, 2500);
 }
 
 function munculText2() {

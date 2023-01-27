@@ -6,6 +6,9 @@ body {
   height: 100vh;
 }
 
+
+
+
 .isi-pesan {
   height: 100vh;
   display: flex;
@@ -14,7 +17,7 @@ body {
 }
 
 .isi-pesan img {
-  height: 40vh;
+  height: 30vh;
   border-radius: 20%;
   display: block;
 }
@@ -41,6 +44,7 @@ body {
 
 #hadiahTerakhir {
   display: none;
+  overflow: hidden;
 }
 
 #text1,
